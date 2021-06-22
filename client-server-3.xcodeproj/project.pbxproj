@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50BA2E59268096030097FC42 /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BA2E58268096030097FC42 /* NotificationCenterViewController.swift */; };
 		50DD2164267F6EB600B32072 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DD2163267F6EB600B32072 /* AppDelegate.swift */; };
 		50DD2166267F6EB600B32072 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DD2165267F6EB600B32072 /* SceneDelegate.swift */; };
-		50DD2168267F6EB600B32072 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DD2167267F6EB600B32072 /* ViewController.swift */; };
+		50DD2168267F6EB600B32072 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DD2167267F6EB600B32072 /* AccountViewController.swift */; };
 		50DD216B267F6EB600B32072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50DD2169267F6EB600B32072 /* Main.storyboard */; };
 		50DD216D267F6EB900B32072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50DD216C267F6EB900B32072 /* Assets.xcassets */; };
 		50DD2170267F6EB900B32072 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50DD216E267F6EB900B32072 /* LaunchScreen.storyboard */; };
+		50DD217D267F7DE600B32072 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DD217C267F7DE600B32072 /* DetailViewController.swift */; };
+		50DD217F267F7F4100B32072 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DD217E267F7F4100B32072 /* Account.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50BA2E58268096030097FC42 /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
 		50DD2160267F6EB600B32072 /* client-server-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "client-server-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50DD2163267F6EB600B32072 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50DD2165267F6EB600B32072 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		50DD2167267F6EB600B32072 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50DD2167267F6EB600B32072 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		50DD216A267F6EB600B32072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50DD216C267F6EB900B32072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50DD216F267F6EB900B32072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50DD2171267F6EB900B32072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50DD217C267F7DE600B32072 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		50DD217E267F7F4100B32072 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		508003FC267FAB8C005F23DC /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				50DD2167267F6EB600B32072 /* AccountViewController.swift */,
+				50DD217E267F7F4100B32072 /* Account.swift */,
+				50DD217C267F7DE600B32072 /* DetailViewController.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		508003FE267FAC2D005F23DC /* Notification Center */ = {
+			isa = PBXGroup;
+			children = (
+				50BA2E58268096030097FC42 /* NotificationCenterViewController.swift */,
+			);
+			name = "Notification Center";
+			sourceTree = "<group>";
+		};
 		50DD2157267F6EB600B32072 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +80,40 @@
 		50DD2162267F6EB600B32072 /* client-server-3 */ = {
 			isa = PBXGroup;
 			children = (
+				50DD2177267F7B2D00B32072 /* App */,
+				50DD2179267F7BAA00B32072 /* Lesson-1 */,
+				50DD2178267F7B4100B32072 /* Resources */,
+			);
+			path = "client-server-3";
+			sourceTree = "<group>";
+		};
+		50DD2177267F7B2D00B32072 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				50DD2163267F6EB600B32072 /* AppDelegate.swift */,
 				50DD2165267F6EB600B32072 /* SceneDelegate.swift */,
-				50DD2167267F6EB600B32072 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		50DD2178267F7B4100B32072 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				50DD2169267F6EB600B32072 /* Main.storyboard */,
 				50DD216C267F6EB900B32072 /* Assets.xcassets */,
 				50DD216E267F6EB900B32072 /* LaunchScreen.storyboard */,
 				50DD2171267F6EB900B32072 /* Info.plist */,
 			);
-			path = "client-server-3";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		50DD2179267F7BAA00B32072 /* Lesson-1 */ = {
+			isa = PBXGroup;
+			children = (
+				508003FE267FAC2D005F23DC /* Notification Center */,
+				508003FC267FAB8C005F23DC /* Singleton */,
+			);
+			path = "Lesson-1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50DD2168267F6EB600B32072 /* ViewController.swift in Sources */,
+				50BA2E59268096030097FC42 /* NotificationCenterViewController.swift in Sources */,
+				50DD217F267F7F4100B32072 /* Account.swift in Sources */,
+				50DD2168267F6EB600B32072 /* AccountViewController.swift in Sources */,
 				50DD2164267F6EB600B32072 /* AppDelegate.swift in Sources */,
 				50DD2166267F6EB600B32072 /* SceneDelegate.swift in Sources */,
+				50DD217D267F7DE600B32072 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HU6FFLPFS6;
-				INFOPLIST_FILE = "client-server-3/Info.plist";
+				INFOPLIST_FILE = "client-server-3/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HU6FFLPFS6;
-				INFOPLIST_FILE = "client-server-3/Info.plist";
+				INFOPLIST_FILE = "client-server-3/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
